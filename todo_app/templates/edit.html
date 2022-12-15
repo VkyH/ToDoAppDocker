@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block container %}
+<form method="POST" >
+    {% csrf_token %}
+    {% if task.user == request.user %}
+      <div class="container">
+      </br>
+        <div class="row">
+            <label class="col"></label>
+          <div class="col-7"><input type="text" class="form-control"  placeholder="{{task.task}}" name="task" value="{{task.task}}" ></div>
+          <div class="col"><button type="submit" class="btn btn-primary ">Update Task</button></div>
+          
+        </div>
+      </div>
+    {% else %}
+    <p> Access Restricted!</p>
+    {% endif %}
+
+</form>
+{% endblock container %}

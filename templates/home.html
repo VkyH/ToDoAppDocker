@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block container %}
+    <div class="row mt-5">
+        <div class="col"><img class="rounded-3 shadow" src=" {% static 'todo_bulb.jpg' %}" alt="todo" width="400p" height="100%">
+        </div>
+        <div class="col"><img class="rounded-3 shadow" src=" {% static 'todo_bulb.jpg' %}" alt="todo" width="400p" height="100%">
+        </div>
+        <div class="col"><img class="rounded-3 shadow" src=" {% static 'todo_bulb.jpg' %}" alt="todo" width="400p" height="100%">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3 mt-3">
+            <center class='h2 text-success'>Quick And Easy To Use, Anytime, Anywhere! </br></center>
+            <center class='h3 text-secondary'>"Plan Your Day Better,Get Your Life Organized"</br></center>
+            <center class='h4 text-secondary'>Helps You Keep Track Of Your Tasks</center>
+            <center><a href="{% url 'todolist' %}"><button type="button" class=" shadow btn btn-primary btn-lg mt-4 rounded-pill">Get Started</button></a></center>
+        </div>
+      </div>
+    </div>
+{% endblock container %} 
