@@ -1,8 +1,8 @@
 # todoapp
  Quick And Easy To Use, Anytime, Anywhere! "Plan Your Day Better,Get Your Life Organized" Helps You Keep Track Of Your Tasks
 
-// to build and the image for the execution environment of our dbms project
-// we add a tag name so that we can easily identify our image with a name 
+// to build the image for the execution environment of our dbms project
+we add a tag name so that we can easily identify our image with a name 
 
 docker build -t dbms-project .
 
