@@ -11,16 +11,21 @@ docker build -t dbms-project .
 docker run -it -p 8000:8000 dbms-project
 
 // the below code is used to list all the containers in the docker
+
 docker ps -a
 
 // we need to login with docker hub account in order to push our file onto dockerhub
+
 docker login
 
 // we tag the created image with a new name for the docker hub account
+
 docker tag dbms-project drstrange01/dbms-project:0.0.1
 
 // below code is used to push the image to docker hub repositories
+
 docker push drstrange01/dbms-project:0.0.1
 
 // below code is used to pull the image from docker hub account
+
 docker pull drstrange01/dbms-project:0.0.1
